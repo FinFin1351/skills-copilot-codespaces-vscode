@@ -1,5 +1,13 @@
 function skillsMemeber()
 {
-    var skills = ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'];
-    return skills;
+    return {
+        restrict: 'E',
+        templateUrl: 'views/skills.html',
+        controller: 'skillsCtrl',
+        controllerAs: 'skills',
+        bindToController: true,
+        scope: {
+            member: '='
+        }
+    }
 }
